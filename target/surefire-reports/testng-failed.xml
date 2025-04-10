@@ -4,9 +4,9 @@
   <listeners>
     <listener class-name="utilites.ExtentReportManager"/>
   </listeners>
-  <test thread-count="5" name="test(failed)" verbose="0">
+  <test thread-count="5" name="edgetest(failed)" verbose="0">
     <parameter name="os" value="windows"/>
-    <parameter name="browser" value="chrome"/>
+    <parameter name="browser" value="edge"/>
     <groups>
       <run>
         <include name="Master"/>
@@ -14,13 +14,13 @@
       </run>
     </groups>
     <classes>
-      <class name="testCases.Tc_AccountReg">
+      <class name="testCases.Tc1_Logintest">
         <methods>
+          <include name="verify_Login"/>
           <include name="teraDown"/>
           <include name="setUp"/>
-          <include name="verifyOnAccountRegistration"/>
         </methods>
-      </class> <!-- testCases.Tc_AccountReg -->
+      </class> <!-- testCases.Tc1_Logintest -->
     </classes>
-  </test> <!-- test(failed) -->
+  </test> <!-- edgetest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

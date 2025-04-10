@@ -27,4 +27,16 @@
     <!--<class name="testCases.Tc2_LoginDDT"/>-->
     </classes>
   </test> <!-- Test -->
+  
+  <test thread-count="5" name="edgetest">
+  <parameter name="os" value="windows"/>
+  <parameter name="browser" value="edge"/>
+    <classes>
+   <class name="testCases.Tc_AccountReg"/>
+    <class  name="testCases.Tc1_Logintest"/>
+    <!--<class name="testCases.Tc2_LoginDDT"/>-->
+    </classes>
+  </test> <!-- Test -->
+  
+  
 </suite> <!-- Suite -->
